@@ -1,6 +1,7 @@
 def call(final body) {
+  def key = 'BAR'
   def config = [:]
-  config["bar"] = "bar was called"
+  config[key] = "bar was called"
   body.delegate = config
   body()
 }
