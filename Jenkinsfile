@@ -7,7 +7,10 @@ pipeline {
             steps {
                 sh 'node --version'
                 foo { echo BAR }
-           	steps.foo (['variable':'tests'], { echo tests  })	
+           	
+		def keys = [:]
+		keys["variable"] = "tests"
+		steps.foo (keys, { echo tests  })	
 	    }
         }
     }
