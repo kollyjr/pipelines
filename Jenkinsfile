@@ -6,7 +6,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'node --version'
-                foo { echo bar }
+                foo { echo BAR }
             }
         }
     }
