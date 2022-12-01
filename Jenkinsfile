@@ -10,7 +10,7 @@ pipeline {
            	
 		def keys = [:]
 		keys["variable"] = "tests"
-		steps.foo (keys, { echo tests  })	
+		foo (keys, { echo tests  })	
 	    }
         }
     }
