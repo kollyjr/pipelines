@@ -1,5 +1,5 @@
 /* Requires the Docker Pipeline plugin */
-@Library('test') _ 
+@Library('sample-library') _ 
 pipeline {
     agent { docker { image 'node:16.17.1-alpine' } }
     stages {
