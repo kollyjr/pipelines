@@ -7,7 +7,7 @@ pipeline {
             steps {
                 sh 'node --version'
                 foo { echo BAR }
-           	this.foo(['variable':'tests'], { echo tests  })	
+           	steps.foo (['variable':'tests'], { echo tests  })	
 	    }
         }
     }
